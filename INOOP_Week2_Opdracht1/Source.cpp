@@ -3,6 +3,7 @@ using namespace std;
 #include "Persoon.h"
 #include "Student.h"
 #include "Docent.h"
+#include <string>
 
 
 int main() {
