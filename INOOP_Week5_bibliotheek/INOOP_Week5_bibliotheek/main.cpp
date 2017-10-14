@@ -1,29 +1,40 @@
 #include <iostream>
 #include "Boek.h"
 #include "Boekenkast.h"
-
-void verwisselBoek(Boekenkast* nieuwBoek) {
-	std::cout << "Boek gekregen " << std::endl;
-	nieuwBoek->toon();
-	nieuwBoek->voegToe("Costa Del Sol");
-	nieuwBoek->toon();
-	nieuwBoek->voegToe("Laat niet los");
-
-
-}
+#include <vector>
 
 
 int main() {
 
-	Boekenkast* nieuwBoek = new Boekenkast();
-	nieuwBoek->toon();
-	nieuwBoek->voegToe("Drift");
-	nieuwBoek->toon();
-	nieuwBoek->voegToe("Mont Blanc");
-	nieuwBoek->toon();
+	//vector<Boek*> boeken;
 
-	verwisselBoek(nieuwBoek);
-	nieuwBoek->toon();
+
+	Boekenkast thriller = Boekenkast();
+	thriller.toon();
+
+	std::cout << "----- Boekenkast genre 'Thriller' " << std::endl;
+
+	thriller.voegToe("De Da Vinci Code");
+	thriller.toon();
+
+	Boekenkast horror = thriller;
+	//horror.voegToe("It");
+	horror.toon();
+
+	Boekenkast drama;
+	drama = thriller;
+	std::cout << "--- Boekenkast genre 'Drama'" << std::endl;
+	drama.toon();
+
+	thriller.voegToe("Het Juvenalis Dilemma");
+	std::cout << "--- Boekenkast genre 'Thriller' " << std::endl;
+	thriller.toon();
+
+	std::cout << "--- Boekenkast genre 'Horror'" << std::endl;
+	horror.toon();
+
+
+
 
 	char c;
 	std::cin >> c;
