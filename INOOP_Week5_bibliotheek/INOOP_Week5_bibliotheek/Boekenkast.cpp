@@ -7,6 +7,7 @@
 Boekenkast::Boekenkast()
 {
 	std::cout << "Boekenkast: constructor" << std::endl;
+
 }
 
 Boekenkast::~Boekenkast()
@@ -24,6 +25,7 @@ void Boekenkast::toon()
 void Boekenkast::voegToe(std::string titel)
 {
 	boek = new Boek(titel);
+	boekenlijst.push_back(boek); //hier zet ik het boek in de boekenlijst
 }
 
 Boekenkast::Boekenkast(const Boekenkast & andereKast)

@@ -6,7 +6,6 @@
 
 int main() {
 
-	//vector<Boek*> boeken;
 
 
 	Boekenkast thriller = Boekenkast();
@@ -18,12 +17,16 @@ int main() {
 	thriller.toon();
 
 	Boekenkast horror = thriller;
-	//horror.voegToe("It");
+	horror.voegToe("It");
 	horror.toon();
 
 	Boekenkast drama;
 	drama = thriller;
 	std::cout << "--- Boekenkast genre 'Drama'" << std::endl;
+	drama.voegToe("Drift");
+	drama.voegToe("Op een onbewoond eiland");
+	drama.voegToe("Costa del Sol");
+	drama.voegToe("Nieuwe Buren");
 	drama.toon();
 
 	thriller.voegToe("Het Juvenalis Dilemma");
@@ -33,6 +36,9 @@ int main() {
 	std::cout << "--- Boekenkast genre 'Horror'" << std::endl;
 	horror.toon();
 
+	std::cout << "de boekenlijst van de categorie 'thriller' bestaat uit " << thriller.boekenlijst.size() << " boeken" << std::endl;
+	std::cout << "de boekenlijst van de categorie 'drama' bestaat uit " << drama.boekenlijst.size() << " boeken" << std::endl;
+	std::cout << "de boekenlijst van de categorie 'horror' bestaat uit " << horror.boekenlijst.size() << " boeken" << std::endl;
 
 
 
