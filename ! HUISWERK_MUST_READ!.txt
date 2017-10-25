@@ -1,0 +1,21 @@
+Kort overzicht van waar elke opdracht te vinden is
+------------------------------------------------------------------------------
+
+Week 1 - Lesrooster modelleren
+map: INOOP_Week1_Opdracht1
+
+Week 2 - Classes met attributen
+map: INOOP_Week2_Opdracht1
+
+Week 3 - Leer je omgeving kennen
+map: geen, wel lijst met shortkey's gemaakt
+
+Week 4 - Tragische Bibliotheek
+map: INOOP_Week4_bibliotheek
+
+Week 5 - Bibliotheek
+map: INOOP_Week5_bibliotheek
+
+Week 6 - Outstreamen
+map: INOOP_Week6_FileRead2
+
