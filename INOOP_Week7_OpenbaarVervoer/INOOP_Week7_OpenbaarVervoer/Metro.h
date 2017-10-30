@@ -8,7 +8,8 @@ public:
 	Metro(std::string vervoersmiddel);
 	void prijsPerKm();
 	void maxPassagiers();
-	int prijs;
+
+	float prijs;
 	int passagiers;
 
 };

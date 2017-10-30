@@ -1,8 +1,16 @@
 #pragma once
-class Bus
+#include "OpenbaarVervoer.h"
+
+class Bus:public OpenbaarVervoer
 {
 public:
-	Bus();
-	~Bus();
+	Bus(std::string vervoersmiddel);
+	void prijsPerKm();
+	void maxPassagiers();
+
+	float prijs;
+	int passagiers;
+
+
 };
 

@@ -19,3 +19,5 @@ map: INOOP_Week5_bibliotheek
 Week 6 - Outstreamen
 map: INOOP_Week6_FileRead2
 
+Week 6 - Openbaar Vervoer
+map: INOOP_Week7_OpenbaarVervoer/INOOP_Week7_OpenbaarVervoer
